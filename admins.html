@@ -20,6 +20,19 @@
 
     <link href="css/responsive.css" rel="stylesheet" />
     <style>
+            body {
+        background-color: #212529; /* Dark mode background */
+        color: #ffffff; /* Light text */
+      }
+      .navbar, .footer {
+        background-color: #343a40; /* Darker navbar/footer */
+      }
+      .footer {
+        padding: 20px 0;
+      }
+      .footer .text-muted {
+        color: #6c757d !important;
+      }
       .highlight {
           font-weight: bold;
           color: #d9534f;
@@ -56,80 +69,59 @@
 
     <div class="gradient-background-overlay"></div>
 
-    <header
-      class="header-area bg-img"
-      style="background-image: url(img/img/img2.jpg)"
-    >
-      <div class="container-fluid h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 h-100">
-            <div class="main-menu h-100">
-              <nav class="navbar h-100 navbar-expand-lg">
-                <a
-                  class="navbar-brand"
-                  href="index.html"
-                  style="font-weight: 800; font-size: 20px; color: white"
-                  >Condominio Acácias</a
-                >
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#studioMenu"
-                  aria-controls="studioMenu"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i class="fa fa-bars"></i> Menu
-                </button>
-                <div class="collapse navbar-collapse" id="studioMenu">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html"
-                        >Inicio <span class="sr-only">(current)</span></a
-                      >
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdown"
-                        role="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Galeria</a
-                      >
-                      <div
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <a class="dropdown-item" href="#">Paisagens</a>
-                        <a class="dropdown-item" href="#">Escola</a>
-                        <a class="dropdown-item" href="#">Ginasio</a>
-                        <a class="dropdown-item" href="#">Jardinagem</a>
-                        <a class="dropdown-item" href="#">Administradores</a>
-                        <a class="dropdown-item" href="#">Memorias</a>
-                        <a class="dropdown-item" href="#">Eventos</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="noticia.html">Notícias</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Condomínio Acácias</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="galleryDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Galeria</a
+              >
+              <div class="dropdown-menu" aria-labelledby="galleryDropdown">
+                <a class="dropdown-item" href="#">Paisagens</a>
+                <a class="dropdown-item" href="#">Escola</a>
+                <a class="dropdown-item" href="#">Ginásio</a>
+                <a class="dropdown-item" href="#">Jardinagem</a>
+                <a class="dropdown-item" href="#">Administradores</a>
+                <a class="dropdown-item" href="#">Memórias</a>
+                <a class="dropdown-item" href="#">Eventos</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticia.html">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
 
  
     <div class="container text-center">
@@ -272,39 +264,17 @@
       </div>
     </section>
 
-    <footer class="footer-area">
-      <div class="container-fluid h-100">
-        <div class="row h-100">
-          <div class="col-12 h-100">
-            <div
-              class="footer-content h-100 d-md-flex align-items-center justify-content-between"
-            >
-              <div class="single-footer-content">
-                <img src="img/core-img/map.png" alt="" />
-                <a href="#">Golf 2</a>
-              </div>
-
-              <div class="single-footer-content">
-                <img src="img/core-img/smartphone.png" alt="" />
-                <a href="#">+244 244 322</a>
-              </div>
-
-              <div class="single-footer-content">
-                <img src="img/core-img/envelope-2.png" alt="" />
-                <a href="#"
-                  ><span
-                    class="__cf_email__"
-                    data-cfemail="b9d1dcd5d5d6f9dad6d4c9d8d7c097dad6d4"
-                    >condominio@acacias.com</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+    <footer class="footer text-center">
+      <div class="container">
+        <p class="text-muted">© 2024 Condomínio Acácias. All rights reserved.</p>
+        <p class="text-muted">
+          <a href="index.html" class="text-muted">Inicio</a> | 
+          <a href="sobre.html" class="text-muted">Sobre</a> | 
+          <a href="noticia.html" class="text-muted">Notícias</a> | 
+          <a href="contacto.html" class="text-muted">Contacto</a>
+        </p>
       </div>
     </footer>
-
     <p>
       Copyright &copy;
       <script
